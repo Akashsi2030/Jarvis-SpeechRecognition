@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JARVIS Assistant</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="/static/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- For icons -->
+</head>
+<body>
+    <div class="container">
+        <h1>JARVIS Assistant</h1>
+        <p>Click the microphone below to give a command or use the buttons for specific tasks.</p>
+        
+        <!-- Microphone Button -->
+        <div class="mic-container">
+            <button class="mic-button" onclick="startListening()">
+                <i class="fas fa-microphone mic-icon"></i> <!-- Microphone icon -->
+            </button>
+        </div>
+
+        <!-- Buttons for predefined commands -->
+        <div class="button-container">
+            <button onclick="sendCommand('open google')">Open Google</button>
+            <button onclick="sendCommand('play music')">Play Music</button>
+            <button onclick="sendCommand('time')">Tell Time</button>
+            <button onclick="sendCommand('send email')">Send Email</button>
+        </div>
+
+        <!-- Status Display -->
+        <p id="status">Waiting for your command...</p>
+    </div>
+</body>
+</html>

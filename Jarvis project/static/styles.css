@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000; /* Black background */
+    color: #ffffff;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #1e1e1e; /* Dark gray container */
+    width: 400px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #bbbbbb; /* Light gray text */
+}
+
+.mic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.mic-button {
+    background-color: #6200ea; /* Purple background */
+    color: #ffffff;
+    border: none;
+    padding: 20px;
+    border-radius: 50%; /* Circular button */
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(98, 0, 234, 0.5); /* Glow effect */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mic-button:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    box-shadow: 0px 6px 15px rgba(98, 0, 234, 0.8); /* Stronger glow */
+}
+
+.mic-button:active {
+    transform: scale(0.95); /* Slight shrink on click */
+    box-shadow: 0px 2px 5px rgba(98, 0, 234, 0.5); /* Reduced glow */
+}
+
+.mic-icon {
+    font-size: 36px; /* Microphone icon size */
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #03dac6; /* Teal background */
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #018786; /* Darker teal on hover */
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #bb86fc; /* Light purple for status */
+}
